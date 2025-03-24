@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div> <!-- Mobile menu icon -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="box">
+            <h2>About Us</h2>
+            <p>We provide the best solutions for your needs. Our team is dedicated to delivering top-notch services.</p>
+        </section>
+        <section class="box">
+            <h2>Our Services</h2>
+            <p>We offer web development, digital marketing, and IT consulting. Reach out to us for more information.</p>
+        </section>
+        <section class="box">
+            <h2>Contact</h2>
+            <p>Email: Alpha@gmail.com <br> Phone: +1234567890</p>
+        </section>
+    </main>
+
+    <!-- Additional Content Section -->
+    <section class="extra-content">
+        <h2>Why Choose Us?</h2>
+        <p>We prioritize customer satisfaction and deliver high-quality services tailored to your needs.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav-links");
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
